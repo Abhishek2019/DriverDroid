@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map</title>
+<style type="text/css">
+	#map{
+		height: 400px;
+		width: 100%;
+	}
+</style>
+<body>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js" ></script>
+	<script src="firebasescript.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<div>My Google Map</div>
+	<div id='map'></div>
+
+	<script type="text/javascript">
+
+
+		var markers = [];
+
+			function getAllCoods(){
+
+			return new Promise((resolve,reject) => {
+				var rootRef = firebase.database().ref().child("dangerCoods");
+				rootRef.on("child_added", snap => {
+				var coods = snap.child("coods").val();
+				// console.log(coods)
+				var iconImage = snap.child("iconImage").val();
+				var content = snap.child("content").val();
+				var cc = {"coods":coods, "iconImage":iconImage, "content": content};
+				window.markers.push(cc);
+				// console.log(markers)
+				resolve("done") 
+				});
+			});
+			}
+
+			async function showMarkers(){
+			const pr = await getAllCoods();
+			
+			console.log("the final then" + markers);
+			loadMapAPI(); 
+			}
+
+			showMarkers();
+
+
+
+
+			//////////////////////
+
+					function loadMapAPI() {
+					var script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gKcAx4iMGjQryUkkLwiiVeXDwvRuUnY&callback=initMap';
+					document.body.appendChild(script);
+					}
+
+
+
+
+
+
+
+
+			////////////////////
+
+
+
+
+		function initMap(){
+			// alert(markers);
+			var options = {
+				zoom:6,
+					center:{lat:42.3601,lng:-71.0589}
+			}
+			//new map
+			var map = new google.maps.Map(document.getElementById('map'),options)
+
+
+			for(var i = 0; i < markers.length; i++){
+				console.log(markers);
+				console.log(markers[i].coods);
+				addMarker(markers[i]);
+			}
+
+
+			//add marker function
+			function addMarker(props){
+				//markers
+				//  var obj = JSON.parse('{props.coods}');
+
+
+				var marker = new google.maps.Marker({
+					position:props.coods,
+					map:map,
+					//icon:props.iconImage 
+				});
+				// check for custom icon
+				if(props.iconImage){
+					marker.setIcon(props.iconImage);
+					}
+				//check for content
+				if(props.content){
+					var infoWindow = new google.maps.InfoWindow({
+						content:props.content
+					});
+
+					marker.addListener('click',function(){
+						infoWindow.open(map,marker);
+					});
+					}
+			}
+		}
+
+
+
+
+
+
+	</script>
+	<button id="logoutbtn" onclick="logout()">Logout</button>
+
+
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gKcAx4iMGjQryUkkLwiiVeXDwvRuUnY&callback=initMap"
+    async defer></script> -->
+
+
+
+	<!-- <script type="text/javascript" src="index.js"></script> -->
+
+</body>
+</html>
