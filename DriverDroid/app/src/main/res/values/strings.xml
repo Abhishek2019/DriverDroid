@@ -1,0 +1,93 @@
+
+<resources>
+<string name="app_name">DriverDroid</string>
+<string name="title_activity_maps">Map</string>
+
+
+
+<string name="action_sign_in_short">Register</string>
+<string name="email">Email</string>
+<string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+<string name="auth_failed">Authentication failed</string>
+<string name="change_email">Change Email</string>
+<string name="change_password">Change Password</string>
+<string name="send_password_reset_email">Send Password reset email</string>
+<string name="remove_user">Remove user</string>
+<string name="new_pass">New Password</string>
+<string name="lbl_forgot_password">Forgot password?</string>
+<string name="forgot_password_msg">A password reset email will be sent to the registered Email ID</string>
+<string name="welcome_message">Traffic Violators</string>
+
+<string name="hint_email">Email</string>
+<string name="hint_password">Password</string>
+<string name="hint_name">Fullname</string>
+
+<string name="btn_login">LOGIN</string>
+<string name="btn_link_to_register">NOT A MEMBER? REGISTER</string>
+<string name="btn_link_to_login">ALREADY REGISTERED? LOGIN</string>
+<string name="btn_forgot_password">Forgot your password?</string>
+<string name="btn_reset_password">Reset Password</string>
+<string name="btn_back"><![CDATA[<< Back]]></string>
+<string name="hint_new_email">New Email</string>
+<string name="btn_change">Change</string>
+<string name="btn_send">Send</string>
+<string name="btn_remove">Remove</string>
+<string name="btn_start">START</string>
+<string name="btn_sign_out">Sign Out</string>
+
+<string name="title_activity_main">Dashboard</string>
+<string name="title_activity_login">Login</string>
+<string name="title_activity_register">Register</string>
+<string name="title_activity_driver">Driver Details</string>
+<string name="title_activity_settings">Settings</string>
+<string name="title_activity_pending">Pending</string>
+<string name="title_activity_profile">Profile</string>
+<string name="title_activity_search">Search</string>
+<string name="title_activity_new_alert">New Alert</string>
+<string name="title_activity_view_alert">View Alert</string>
+<string name="title_activity_reset_password">Reset Password</string>
+
+<string name="navigation_drawer_open">Open navigation drawer</string>
+<string name="navigation_drawer_close">Close navigation drawer</string>
+<string name="nav_header_text">Dashboard</string>
+<string name="nav_header_text2">Traffic Knight</string>
+<string name="action_settings">Settings</string>
+
+<!-- Strings for report activity-->
+<string name="title_activity_report">Report</string>
+<string name="hint_vehicleno">Vehicle No.</string>
+<string name="hint_licenseno">License No.</string>
+<string name="hint_datetime">Date and time</string>
+<string name="hint_description">Description(optional)</string>
+<string name="hint_fine">Fine</string>
+<string name="btn_addphoto">Add photo</string>
+<string name="textview_reason">Reason</string>
+
+<string-array name="reason_array">
+    <item>Speed limit</item>
+    <item>Drinking and driving</item>
+    <item>Invalid License</item>
+    <item>Driving by a minor</item>
+    <item>Driving without seat belt</item>
+    <item>Jumping signal</item>
+    <item>Parking violations</item>
+    <item>Not carrying license</item>
+    <item>Other reason</item>
+</string-array>
+
+<string-array name="filter_array">
+    <item>Vehicle</item>
+    <item>License</item>
+</string-array>
+
+<string-array name="type_array">
+    <item>Scooter</item>
+    <item>Bike</item>
+    <item>Car</item>
+    <item>Van</item>
+    <item>Bus</item>
+    <item>Truck</item>
+    <item>Auto Rickshaw</item>
+    <item>Other</item>
+</string-array>
+</resources>

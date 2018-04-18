@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.optimus.loginmaster.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/side_nav_bar"
+            android:fitsSystemWindows="true"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DriverDroid"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:paddingTop="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_fullname"
+                style="@style/editTextStyle"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:drawableEnd="@drawable/ic_name"/>
+
+            <EditText
+                android:id="@+id/txt_dob"
+                style="@style/editTextStyle"
+                android:hint="Date of Birth"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:longClickable="false"
+                android:inputType="datetime"
+                android:drawableEnd="@drawable/ic_date"/>
+
+            <EditText
+                android:id="@+id/txt_email"
+                style="@style/editTextStyle"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_email"/>
+
+            <EditText
+                android:id="@+id/txt_password"
+                style="@style/editTextStyle"
+                android:hint="@string/hint_password"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                tools:focusableInTouchMode="true"
+                android:drawableEnd="@drawable/ic_lock"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:onClick="verifyCode"
+                android:background="@color/colorAccent"
+                android:text="REGISTER"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout></ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight=".5"
+                android:background="@color/colorDivider"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALREADY REGISTERED ?"
+                android:textSize="14sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight=".5"
+                android:background="@color/colorDivider"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorOffWhite"
+            android:text="Login"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "488886143607",
+    "firebase_url": "https://driver-droid-web.firebaseio.com",
+    "project_id": "driver-droid-web",
+    "storage_bucket": "driver-droid-web.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488886143607:android:70420b598498aaed",
+        "android_client_info": {
+          "package_name": "com.thepraats.driverdroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488886143607-d3c5ed6bf9a5as0vlakkubmt30mg549s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBowqqw_N44k-Oo79KdsCsZQuK72uCkPZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "1015875175143",
+    "firebase_url": "https://driver-droid.firebaseio.com",
+    "project_id": "driver-droid",
+    "storage_bucket": "driver-droid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015875175143:android:67160c24db56d85c",
+        "android_client_info": {
+          "package_name": "com.example.optimus.loginmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015875175143-bmuddi2p8pul45va0cpbkqpvbcf6qmlv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFLp7zpo1HcWkglpzkYCNEV0IXg6acU18"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015875175143:android:70420b598498aaed",
+        "android_client_info": {
+          "package_name": "com.thepraats.driverdroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015875175143-ecjrff3qoouuro1c3dql1u76kslfuac8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thepraats.driverdroid",
+            "certificate_hash": "17e662c6de6a4ec7e09c6a29073f54d7bbdc5a36"
+          }
+        },
+        {
+          "client_id": "1015875175143-n1aklmhno3gsmf1tub26v7f5fvh4lggu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thepraats.driverdroid",
+            "certificate_hash": "bd53ff7a6c00bb10b885e091c6e369e27cf180c3"
+          }
+        },
+        {
+          "client_id": "1015875175143-bmuddi2p8pul45va0cpbkqpvbcf6qmlv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFLp7zpo1HcWkglpzkYCNEV0IXg6acU18"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015875175143-bmuddi2p8pul45va0cpbkqpvbcf6qmlv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

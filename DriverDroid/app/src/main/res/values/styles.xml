@@ -1,0 +1,88 @@
+<resources>
+
+
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+            <item name="colorPrimary">@android:color/transparent</item>
+            <item name="windowActionBarOverlay">true</item>
+
+        </style>
+
+        <style name="editTextStyle" parent="Widget.AppCompat.EditText">
+            <item name="android:textColorHint">@color/colorHint</item>
+            <item name="android:backgroundTint">@color/colorHint</item>
+            <item name="android:textColor">@color/colorPrimaryText</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:ems">10</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:drawablePadding">10dp</item>
+            <item name="android:layout_marginBottom">16dp</item>
+        </style>
+
+        <style name="editTextReportStyle" parent="Widget.AppCompat.EditText">
+            <item name="android:textColorHint">@color/colorHint</item>
+            <item name="android:backgroundTint">@color/colorHint</item>
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:ems">10</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:drawablePadding">5dp</item>
+        </style>
+
+        <style name="editTextAlertStyle" parent="Widget.AppCompat.EditText">
+            <item name="android:textColorHint">@color/colorHint</item>
+            <item name="android:backgroundTint">@color/colorHint</item>
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:ems">10</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:drawablePadding">10dp</item>
+            <item name="android:maxLength">20</item>
+        </style>
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="spinnerItemStyle">
+            <item name="android:padding">10dp</item>
+            <item name="android:textSize">20sp</item>
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+
+        <style name="spinnerDropDownItemStyle">
+            <item name="android:padding">20dp</item>
+            <item name="android:textSize">30sp</item>
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+
+        <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="android:windowBackground">@drawable/splash_background</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

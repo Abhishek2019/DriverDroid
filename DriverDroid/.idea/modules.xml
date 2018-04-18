@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DriverDroid.iml" filepath="$PROJECT_DIR$/DriverDroid.iml" />
+      <module fileurl="file://S:\DriverDroidFiles\DriverDroid_Android-master\DriverDroid_Android-master\DriverDroid\DriverDroid.iml" filepath="S:\DriverDroidFiles\DriverDroid_Android-master\DriverDroid_Android-master\DriverDroid\DriverDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://S:\DriverDroidFiles\DriverDroid_Android-master\DriverDroid_Android-master\DriverDroid\app\app.iml" filepath="S:\DriverDroidFiles\DriverDroid_Android-master\DriverDroid_Android-master\DriverDroid\app\app.iml" />
+    </modules>
+  </component>
+</project>
